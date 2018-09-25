@@ -7,7 +7,7 @@ Following is the list of default variables used to launch the ECS Cluster
 ```
 vpc_id = (vpc_id) 
 ami_id = (ami-6944c513)
-ami_owners = [ self ,  amazon ,  aws-marketplace ]
+ami_owners = ([ self ,  amazon ,  aws-marketplace ])
 lookup_latest_ami = (false)
 root_block_device_type = (gp2)
 root_block_device_size = (8)
@@ -18,17 +18,17 @@ health_check_grace_period = (600)
 desired_capacity = (1) 
 min_size = (1) 
 max_size = (1) 
-scale_up_cooldown_seconds =  300 
-scale_down_cooldown_seconds =  300 
-high_cpu_evaluation_periods =  2 
-high_cpu_period_seconds =  300 
-high_cpu_threshold_percent =  90 
-low_cpu_evaluation_periods =  2 
-low_cpu_period_seconds =  300 
-low_cpu_threshold_percent =  10 
-high_memory_evaluation_periods =  2 
-high_memory_period_seconds =  300 
-high_memory_threshold_percent =  90 
+scale_up_cooldown_seconds = (300)
+scale_down_cooldown_seconds = (300) 
+high_cpu_evaluation_periods = (2)
+high_cpu_period_seconds = (300) 
+high_cpu_threshold_percent = (90)
+low_cpu_evaluation_periods = (2)
+low_cpu_period_seconds = (300)
+low_cpu_threshold_percent = (10) 
+high_memory_evaluation_periods = (2)
+high_memory_period_seconds = (300)
+high_memory_threshold_percent = (90) 
 
 ```
 
