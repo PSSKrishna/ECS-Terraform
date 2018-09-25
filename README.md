@@ -1,6 +1,18 @@
 # Terraform Module to create an Amazon Web Services (AWS) EC2 Container Service (ECS) cluster.
 
+Usage
+--------
+- To plan the deployment before actually creating the infra
+```
+cd ECS-Terraform 
 
+terraform plan
+```
+
+- To create the ECS infra using terraform
+```
+terraform apply
+```
 
 ## Variables
 Following is the list of default variables used to launch the ECS Cluster
