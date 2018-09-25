@@ -43,3 +43,16 @@ high_memory_threshold_percent = (90)
 - `ecs_service_role_arn` - ARN of IAM role for use with ECS services
 - `container_instance_ecs_for_ec2_service_role_arn` - ARN of IAM role associated with EC2 container instances
 - `container_instance_autoscaling_group_name` - Name of container instance Autoscaling Group
+
+
+
+Bug Reports
+-----------
+
+Bug reports can be directly sent to authors and/or using github's issues.
+
+
+Author Information
+------------------
+
+Utkarsh Sharma <utkarshredhat@gmail.com>
