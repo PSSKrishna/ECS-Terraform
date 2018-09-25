@@ -1,3 +1,5 @@
+ECS stands for EC2 Container Service and is the AWS platform for running Docker containers. 
+
 # Terraform Module to create an Amazon Web Services (AWS) EC2 Container Service (ECS) cluster.
 
 Usage
