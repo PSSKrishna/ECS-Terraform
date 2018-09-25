@@ -246,7 +246,7 @@ resource "aws_cloudwatch_metric_alarm" "container_instance_low_cpu" {
     ClusterName = "${aws_ecs_cluster.container_instance.name}"
   }
 
-  alarm_description = "Scale down if the CPUReservation is below N% for N duration"
+  alarm_description = "Scale down if the CPUReservation is below X% for X duration"
   alarm_actions     = ["${aws_autoscaling_policy.container_instance_scale_down.arn}"]
 
   depends_on = ["aws_cloudwatch_metric_alarm.container_instance_high_cpu"]
@@ -266,7 +266,7 @@ resource "aws_cloudwatch_metric_alarm" "container_instance_high_memory" {
     ClusterName = "${aws_ecs_cluster.container_instance.name}"
   }
 
-  alarm_description = "Scale up if the MemoryReservation is above N% for N duration"
+  alarm_description = "Scale up if the MemoryReservation is above X% for X duration"
   alarm_actions     = ["${aws_autoscaling_policy.container_instance_scale_up.arn}"]
 
   depends_on = ["aws_cloudwatch_metric_alarm.container_instance_low_cpu"]
@@ -286,7 +286,7 @@ resource "aws_cloudwatch_metric_alarm" "container_instance_low_memory" {
     ClusterName = "${aws_ecs_cluster.container_instance.name}"
   }
 
-  alarm_description = "Scale down if the MemoryReservation is below N% for N duration"
+  alarm_description = "Scale down if the MemoryReservation is below X% for X duration"
   alarm_actions     = ["${aws_autoscaling_policy.container_instance_scale_down.arn}"]
 
   depends_on = ["aws_cloudwatch_metric_alarm.container_instance_high_memory"]

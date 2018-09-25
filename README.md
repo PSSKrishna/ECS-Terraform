@@ -4,6 +4,8 @@ ECS stands for EC2 Container Service and is the AWS platform for running Docker 
 
 Usage
 --------
+
+
 - To plan the deployment before actually creating the infra
 ```
 cd ECS-Terraform 
@@ -70,3 +72,10 @@ Author Information
 ------------------
 
 Utkarsh Sharma <utkarshredhat@gmail.com>
+
+
+Contributing
+------------
+Everybody is welcome to contribute. Please, see [`CONTRIBUTING`][contrib] for further information.
+
+[contrib]: CONTRIBUTING.md
